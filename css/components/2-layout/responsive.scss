@@ -1,0 +1,155 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  @include prebuild-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1,
+  h2 {
+    font-size: 55px;
+  }
+  h3 {
+    font-size: 34px;
+  }
+  p.big {
+    font-size: 28px;
+  }
+  body {
+    font-size: 22px;
+  }
+  @include header-xxxlg-xxxxlg;
+  @include prebuild-xxxlg-xxxxlg;
+  @include peak-xxxlg-xxxxlg;
+  @include performance-xxxlg-xxxxlg;
+  @include experience-xxxlg-xxxxlg;
+  @include footer-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+//   @include prebuild-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+  p.big {
+    font-size: 24px;
+  }
+  body {
+    font-size: 20px;
+  }
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+
+  @include prebuild-xlg-xxlg;
+  @include peak-xlg-xxlg;
+  @include features-xlg-xxlg;
+  @include performance-xlg-xxlg;
+  @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1,
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+  @include prebuild-md-lg;
+  @include peak-md-lg;
+  @include features-md-lg;
+}
+// 750px
+@include sm-md {
+  h1,
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  p.big {
+    font-size: 20px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .pagination {
+    &__button {
+      font-size: 14px;
+    }
+    ul {
+      padding: 0 20px;
+      li {
+        margin-right: 5px;
+        a,
+        button {
+          font-size: 14px;
+          padding: 10px 14px;
+        }
+      }
+    }
+  }
+  @include prebuild-sm-md;
+  @include performance-sm-md;
+  @include experience-sm-md;
+  @include footer-sm-md;
+}
+// 650px
+@include sm-md-extra {
+//   @include prebuild-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  body {
+    font-size: 16px;
+  }
+  p {
+    &.big {
+      font-size: 16px;
+    }
+    &.ex {
+      font-size: 12px;
+      line-height: 32px;
+    }
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include prebuild-xsm-sm;
+  @include peak-xsm-sm;
+  @include features-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+//   @include prebuild-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include prebuild-xxxsm-xxsm;
+}
