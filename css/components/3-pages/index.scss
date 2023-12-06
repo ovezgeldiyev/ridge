@@ -32,13 +32,11 @@
   &Item {
     margin: 20px 15px;
     width: calc(25% - 30px);
-    max-width: 397px;
     border-radius: 12px;
     padding: 20px 24px;
     display: flex;
     flex-direction: column;
     border: 1px solid #dddddd;
-
     &.active {
       background-color: rgba($primary, 0.1);
       border-color: $primary;

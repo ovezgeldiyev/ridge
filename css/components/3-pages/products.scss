@@ -1,0 +1,265 @@
+.work {
+  padding: 50px 0 60px;
+  &__inner {
+    &-title {
+      text-align: center;
+      max-width: 914px;
+      margin: 0 auto 50px;
+      p {
+        color: $primary;
+        font-family: $avenirPro;
+        margin-bottom: 50px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+    &-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  &Item {
+    margin: 20px 15px;
+    width: calc(33.3% - 30px);
+    padding: 20px;
+    border: 1px solid #dddddd;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &.active {
+        opacity: 1;
+        background: rgba(0, 140, 255, 0.1);
+        border-color: #008cff;
+        box-shadow: 0px 20px 60px rgba(0, 140, 255, 0.3);
+    }
+    &:hover {
+      opacity: 1;
+      background: rgba(0, 140, 255, 0.1);
+      border-color: #008cff;
+      box-shadow: 0px 20px 60px rgba(0, 140, 255, 0.3);
+    }
+    &__image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 98%;
+      border-radius: 5px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+    }
+  }
+}
+// 1380px
+@mixin work-xxxlg-xxxxlg {
+  .work {
+    padding: 35px 0 60px;
+    &__inner {
+      &-row {
+        margin: 0 -10px;
+      }
+    }
+    &Item {
+      width: calc(33.3% - 20px);
+      margin: 15px 10px;
+    }
+  }
+}
+// 1180px
+@mixin work-xlg-xxlg {
+  .work {
+    &__inner {
+      &-row {
+        margin: 0 -7px;
+      }
+    }
+    &Item {
+      width: calc(33.3% - 14px);
+      margin: 10px 7px;
+      padding: 12px;
+    }
+  }
+}
+// 930px
+@mixin work-md-lg {
+  .work {
+    &__inner {
+      &-title {
+        margin-bottom: 30px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+      &-row {
+        margin: 0 -10px;
+      }
+      &-foot {
+        & > p {
+          display: none;
+        }
+      }
+      h1 {
+        margin-bottom: 24px;
+      }
+    }
+    &Item {
+      width: calc(50% - 20px);
+      margin: 10px;
+      padding: 20px;
+    }
+  }
+}
+// 750px
+@mixin work-sm-md {
+  .work {
+    &__inner {
+      &-title {
+        margin-bottom: 30px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+      &-row {
+        margin: 0;
+      }
+      &-foot {
+        padding-top: 40px;
+        .pagination {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      h1 {
+        margin-bottom: 24px;
+      }
+    }
+    &Item {
+      width: 100%;
+      margin: 0 0 20px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+// 540px
+@mixin work-xsm-sm {
+  .work {
+    padding: 15px 0 40px;
+    &__inner {
+        &-title {
+            p {
+                margin-bottom: 20px;
+            }
+        }
+      h1 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+.creative {
+  padding: 90px 0 40px;
+  &__inner {
+    &-title {
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      p {
+        color: #414141;
+      }
+    }
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+    }
+    &-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      max-width: 195px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.07;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+    }
+    .button {
+      margin-right: 20px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+}
+// 1380px
+@mixin creative-xxxlg-xxxxlg {
+  .creative {
+  }
+}
+// 1180px
+@mixin creative-xlg-xxlg {
+  .creative {
+    padding: 70px 0 40px;
+    &__inner {
+      h3 {
+        margin-bottom: 30px;
+        font-size: 32px;
+        line-height: 50px;
+      }
+    }
+  }
+}
+// 930px
+@mixin creative-md-lg {
+  .creative {
+  }
+}
+// 750px
+@mixin creative-sm-md {
+  .creative {
+  }
+}
+// 540px
+@mixin creative-xsm-sm {
+  .creative {
+    padding: 50px 0 90px;
+    &__inner {
+      &-logo {
+        max-width: 142px;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

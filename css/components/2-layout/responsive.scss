@@ -23,10 +23,13 @@
   @include performance-xxxlg-xxxxlg;
   @include experience-xxxlg-xxxxlg;
   @include footer-xxxlg-xxxxlg;
+  // products
+  @include work-xxxlg-xxxxlg;
+
 }
 // 1250px
 @include xlg-xxlg-extra {
-//   @include prebuild-xlg-xxlg-extra;
+  //   @include prebuild-xlg-xxlg-extra;
 }
 // 1180px
 @include xlg-xxlg {
@@ -51,6 +54,10 @@
   @include features-xlg-xxlg;
   @include performance-xlg-xxlg;
   @include footer-xlg-xxlg;
+  // products
+  @include creative-xlg-xxlg;
+  @include work-xlg-xxlg;
+
 }
 // 1024px
 @include lg-xlg {
@@ -76,6 +83,9 @@
   @include prebuild-md-lg;
   @include peak-md-lg;
   @include features-md-lg;
+  // products
+  @include work-md-lg;
+
 }
 // 750px
 @include sm-md {
@@ -97,9 +107,9 @@
       font-size: 14px;
     }
     ul {
-      padding: 0 20px;
+      padding: 0 10px;
       li {
-        margin-right: 5px;
+        margin-right: 3px;
         a,
         button {
           font-size: 14px;
@@ -112,10 +122,13 @@
   @include performance-sm-md;
   @include experience-sm-md;
   @include footer-sm-md;
+  // products
+  @include work-sm-md;
+
 }
 // 650px
 @include sm-md-extra {
-//   @include prebuild-sm-md-extra;
+  //   @include prebuild-sm-md-extra;
 }
 // 540px
 @include xsm-sm {
@@ -138,16 +151,55 @@
       line-height: 32px;
     }
   }
+  .social {
+    &.bg {
+      a {
+        width: 38px;
+        height: 38px;
+        margin-right: 17px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    a {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      svg {
+        max-width: 13px;
+        max-height: 15px;
+        &.sm {
+          max-width: 8px;
+        }
+        &.big {
+          max-width: 15px;
+        }
+      }
+    }
+  }
+  .button {
+    &.big {
+      padding: 14px 20px;
+    }
+  }
+  .auto__container {
+    padding: 0 20px;
+  }
   @include header-xsm-sm;
   @include nav-xsm-sm;
   @include prebuild-xsm-sm;
   @include peak-xsm-sm;
   @include features-xsm-sm;
   @include footer-xsm-sm;
+  // products
+  @include work-xsm-sm;
+  @include creative-xsm-sm;
+
 }
 // 440px
 @include xxsm-xsm {
-//   @include prebuild-xxsm-xsm;
+  //   @include prebuild-xxsm-xsm;
 }
 // 390px
 @include xxxsm-xxsm {
